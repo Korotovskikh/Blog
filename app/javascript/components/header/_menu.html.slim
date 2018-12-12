@@ -1,0 +1,25 @@
+ul 
+  .top-menu
+    li roll="presentation" class="active"
+      |Главная
+    li roll="presentation" 
+      = link_to users_path
+        | Users
+    li roll="presentation"
+      = link_to posts_path
+        | Posts
+    li roll="presentation"
+      = link_to contacts_path
+        | Контакты
+ 
+div
+  .nav.flex-column.nav-pills.vertical
+    - if user_signed_in?
+      .btn.btn-success
+        = t('label.hello') %current_user.name.capitalize
+      .btn.btn-danger
+        = link_to t('label.log_out'), destroy_user_session_path, method: :delete
+    - else
+      = link_to t('label.log_in_facebook'), user_facebook_omniauth_authorize_path
+      = link_to t('label.log_in'), new_user_session_path
+      = link_to t('label.registration'), new_user_registration_path

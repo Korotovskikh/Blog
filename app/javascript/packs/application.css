@@ -1,0 +1,32 @@
+.header {
+  background-color: #d3d3d3;
+}
+ 
+h2 {
+  position: absolute;
+  right: 10px;
+  font-size: small;
+}
+
+.footer {
+  position: absolute;
+  right: 10px;
+  font-size: small;
+}
+
+@media all and (min-width: 1200px) {
+}
+
+table {
+  table-layout: fixed;
+}
+
+th {
+  background: #F0FFF0;
+  color: #000080;
+}
+
+th, td {
+	padding: 3px;
+	border: 1px solid black;
+}

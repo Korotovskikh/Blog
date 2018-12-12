@@ -1,0 +1,31 @@
+
+ru:
+  label:
+    log_in:                Вход
+    log_out:               Выход
+    hello:                 Добро пожаловать, %s!
+    registration:          Регистрация
+    log_in_facebook:       Вход через Facebook    
+     
+  submit:
+    sign up:               Зарегистрироваться
+    log in:                Войти
+  
+  activerecord:
+    errors:
+      messages:
+        blank:     Обязательно для заполнения
+        too_short: Слишком коротко
+
+        models:
+          user: Пользователи
+          post: Сообщения
+
+          attributes:
+            user:
+              password:              Пароль
+              password_confirmation: Подтверждение
+              email:                 Email
+              name:                  Имя пользователя
+  
+  login_links_html: "%{login} или %{register}"

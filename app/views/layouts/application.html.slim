@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title
+      | Blog
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_pack_tag 'application'
+    = javascript_pack_tag 'application'
+  body
+    .wrapper
+      .header
+        = render 'header'
+        .nav
+          = render 'components/header/menu'
+        .heading
+      .aside
+      .selection
+        = notice
+        = yield
+      hr
+    .footer
+      = render 'footer'

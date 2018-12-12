@@ -1,0 +1,26 @@
+h1 Listing posts
+
+table
+  thead
+    tr
+      th 
+        .table-primary
+          | Title
+      th 
+        .table-warning
+          | Body
+      th
+        .table-secondary
+          | User
+      th
+      th
+      th
+
+  tbody
+    = render @posts
+      
+br
+= link_to 'New Post', new_post_path
+
+p
+  = paginate @posts
